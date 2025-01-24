@@ -22,7 +22,7 @@ tasks:
   kind:04-run-cloud-provider-kind:
     desc: "Run sigs.k8s.io/cloud-provider-kind@latest to enable load balancer services with KinD"
     cmds:
-      - sudo cloud-provider-kind
+      - sudo ../bin/cloud-provider-kind
 
   kind:05-delete-cluster:
     cmds:

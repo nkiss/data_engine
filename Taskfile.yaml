@@ -1,0 +1,11 @@
+version: "3"
+
+tasks:
+  setup:run-env-scripts:
+    desc: "Env scripts to make life easier"
+    cmds:
+      - eval "$(task --completion zsh)"
+  kind:run-cloud-provider:
+    desc: "Run sigs.k8s.io/cloud-provider-kind@latest to enable load balancer services with KinD"
+    cmds:
+      - sudo bin/cloud-provider-kind

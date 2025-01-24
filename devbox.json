@@ -22,7 +22,9 @@
       "export GOBIN=$(git rev-parse --show-toplevel)/bin",
       "export PATH=$GOBIN:$PATH",
       "go install sigs.k8s.io/cloud-provider-kind@latest",
-      "echo 'Welcome to devbox!' > /dev/null"
+      "source ~/.zprofile",
+      "source ~/.zshrc",
+      "echo 'Welcome to data_engine, start hacking!' > /dev/null"
     ],
     "scripts": {
       "test": [
